@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5 {
 	padding: 25px 75px 0 75px;
 }
 
-nav {
+nav { /* Stretch Goal One: Added background color to nav and set to fixed position */
 	background: linear-gradient(90deg, #02ADFD 0%, #00254c 45%, #00254c 55%, #02ADFD 100%);
 	display: block;
 	width: 100%;
@@ -86,7 +86,7 @@ nav div {
  
 nav a {
 	display: inline-block;
-	padding: 10px 0;
+	padding: 15px 0;
 	text-decoration: none;
 	color: #fff;
 	margin-right: 90px;
@@ -101,6 +101,13 @@ nav a:last-child {
 	float: right;
 	clear:both;
 	text-align: right;
+	background: url('/img/logo.png') no-repeat center;
+	width: 185px;
+	height: 45px;
+}
+
+nav a:last-child:hover {
+	filter: invert(1);
 }
 
 nav a:hover {
@@ -151,6 +158,9 @@ header div {
 	position: relative;
 	margin-left: 6px;
 	text-align: center;
+	background: url('/img/header-img.png') no-repeat center;
+	
+	
 }
 
 h2 {
@@ -167,10 +177,12 @@ p, a {
 	border-top: 2px solid #ccc;
 	border-bottom: 2px solid #ccc;
 	padding: 40px 0;
+	background: url('/img/mid-page-accent.jpg') no-repeat center;
+	background-size: contain;
 }
 
 .content-top {
-	padding-bottom: 40px; 
+	padding-bottom: 140px; 
 }
 .content-top article {
 	display: inline-block;
@@ -178,7 +190,7 @@ p, a {
 }
 
 .content-bottom {
-	padding-top: 40px;
+	padding-top: 140px;
 }
 
 .content-bottom article {
